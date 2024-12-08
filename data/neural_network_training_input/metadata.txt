@@ -1,0 +1,19 @@
+Dataset Metadata
+Dataset Name: Pixel Variation and Underwater Survey Metrics for Patch Reefs
+
+Description: This dataset contains pixel variation metrics across various color spaces for individual tiles of patch reefs, alongside structural metrics derived from underwater surveys. It provides a comprehensive representation of reef structural complexity and optical variability.
+
+Columns:
+
+rec: Identifier for the patch reef location.
+rep: Tile identifier within the patch reef.
+[Color Channel Columns]: Pixel variation for different channels in various color spaces:
+Example: r_PixVar_rgb, g_PixVar_rgb, b_PixVar_rgb for RGB color space.
+Example: y_PixVar_ycrcb for YCrCb color space.
+Example: gray_PixVar_grayscale for grayscale values.
+Example: h_PixVar_hsv, v_PixVar_hsv for HSV color space.
+Other spaces include Lab, Luv, YUV, XYZ, and their respective channels.
+D_sfm: Fractal dimension calculated from underwater surveys, indicating surface complexity.
+R_sfm: Rugosity calculated from underwater surveys, representing surface roughness.
+H_sfm: Height range calculated from underwater surveys, measuring elevation differences within the area.
+Source: This dataset combines remotely sensed imagery and underwater survey data.

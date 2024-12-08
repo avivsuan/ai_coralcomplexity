@@ -1,0 +1,20 @@
+Code Metadata
+Code Name: Pixel Variability Calculation for Colorspace Images
+
+Description: This Python script calculates pixel variability (variance) for each channel of images in different color spaces. It processes images from specific directories and saves the calculated metrics as CSV files for each site and orthophoto type (e.g., drone or SFM).
+
+Inputs:
+
+Input Image Directory (base_input_path):
+Root directory containing images organized by site and orthophoto type (e.g., gray, drone, sfm).
+Image Files:
+TIFF images for which pixel variability is calculated.
+Outputs:
+
+CSV files (pix_values.csv) containing pixel variability metrics for each processed image, saved in the corresponding site and orthophoto type directory.
+Columns in Output CSV:
+
+cell: Name of the image file.
+RPixVar: Variance of the red (or equivalent) channel.
+GPixVar: Variance of the green (or equivalent) channel.
+BPixVar: Variance of the blue (or equivalent) channel.

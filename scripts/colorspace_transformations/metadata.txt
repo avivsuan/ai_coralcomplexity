@@ -1,0 +1,35 @@
+Code Metadata
+Code Name: Colorspace Transformations for Coral Reef Imagery
+
+Description: This Python script automates the conversion of TIFF images from the standard RGB color space into various derived color spaces, such as grayscale, HSV, YCrCb, Lab, Luv, and more. It organizes the output based on input metadata (e.g., site and data type) and saves the transformed images for subsequent analysis.
+
+Inputs:
+
+Input Folder:
+Directory containing TIFF images for processing, structured by site, drone, and SFM data.
+Sites:
+A list of dictionaries specifying site-specific paths for drone orthophotos and SFM data.
+Outputs:
+
+Transformed TIFF images saved in organized directories based on site and input type (e.g., drone or SFM).
+Example transformation demonstrated for grayscale conversion.
+Core Functionality:
+
+process_tiff_files(input_folder, output_folder):
+Reads TIFF images from the input folder.
+Converts images from RGB to the specified colorspace (e.g., grayscale using cv.COLOR_BGR2GRAY).
+Saves the transformed images in the designated output folder.
+Dynamic Directory Management:
+Creates output directories for each site and input type (drone or SFM) if they do not already exist.
+Batch Processing:
+Iterates through predefined site configurations to process all associated images.
+Colorspaces Supported:
+
+Currently demonstrated: Grayscale (cv.COLOR_BGR2GRAY).
+Extendable to other color spaces by modifying the conversion parameter in cv.cvtColor():
+HSV: cv.COLOR_BGR2HSV
+YCrCb: cv.COLOR_BGR2YCrCb
+Lab: cv.COLOR_BGR2Lab
+Luv: cv.COLOR_BGR2Luv
+XYZ: cv.COLOR_BGR2XYZ
+Grayscale: cv.COLOR_BGR2GRAY

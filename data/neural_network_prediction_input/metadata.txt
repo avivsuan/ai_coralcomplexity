@@ -1,0 +1,20 @@
+Dataset Metadata
+Dataset Name Pixel Variation and Coral Complexity Predictions for Patch Reefs
+
+Description This dataset contains pixel variation metrics calculated for entire patch reefs and their corresponding tiles. These metrics serve as input for a neural network model aimed at predicting coral structural complexity metrics for the full patch reef.
+
+Columns
+
+X Identifier for the patch reef.
+cell Unique tile identifier within the patch reef.
+[Color Channel Columns] Pixel variation metrics for different channels in various color spaces
+Example r_PixVar_rgb, g_PixVar_rgb, b_PixVar_rgb for RGB color space.
+Example y_PixVar_ycrcb for YCrCb color space.
+Example gray_PixVar_grayscale for grayscale values.
+Example h_PixVar_hsv, v_PixVar_hsv for HSV color space.
+Additional color spaces include Lab, Luv, YUV, XYZ, and their respective channels.
+Predicted Complexity Metrics These metrics are derived from the neural network model to estimate structural complexity for entire patch reefs.
+Source
+
+Pixel variation metrics are computed from remote sensing imagery of reef tiles.
+Complexity predictions are based on a neural network model trained on previously validated underwater survey data.

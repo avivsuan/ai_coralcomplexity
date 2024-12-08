@@ -1,0 +1,19 @@
+Code Metadata
+Code Name: Merging Colorspace Transformation Data into a Unified CSV File
+
+Description: This R script processes and merges pixel variation data from multiple color spaces into a single, unified CSV file. It standardizes and consolidates the data for downstream analysis, such as training machine learning models or conducting statistical assessments.
+
+Inputs:
+
+Input Directory (t_path):
+Root directory containing subdirectories for each color space transformation (e.g., gray, hsv, rgb).
+Individual CSV Files:
+Per-color-space pixel variation data files (e.g., pix_values.csv) located in subdirectories organized by transformations.
+Outputs:
+
+Merged CSV File:
+Path: Y:/Aviv/ArcGIS/CoralSFM/data/TOT_pix_values.csv
+Consolidates all pixel variation metrics across color spaces into a single file.
+Reshaped Master CSV File:
+Path: C:/Users/Aviv/colorspace/master/TOT_pix_values.csv
+Reformats data into a wide format where columns represent individual metrics for each transformation.
