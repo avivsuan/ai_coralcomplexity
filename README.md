@@ -32,3 +32,5 @@ The project follows these main steps:
 **Data**
   - Training Data: Pixel variability metrics from multiple color spaces.
   - Prediction Data: Scaled metrics for applying the ANN to predict coral complexity across larger regions.
+
+[![DOI](https://zenodo.org/badge/900506630.svg)](https://doi.org/10.5281/zenodo.14320241)
